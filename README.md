@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Hi there! This is my submission for the Frontend Development assignment.
 
-## Getting Started
+The goal was to take the Figma designs provided and turn them into a fully functional, pixel-perfect web application. I focused heavily on getting the visual details right—from the exact gradient colors to the font weights—while keeping the user experience smooth.
 
-First, run the development server:
+Live Demo -(https://frontendqu.netlify.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I chose a stack that allowed me to build quickly but keeps the code professional and scalable:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next.js (App Router): I used this to handle the project structure and routing efficiently.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TypeScript: Using strict types helped me prevent bugs and keep the code clean.
 
-## Learn More
+Tailwind CSS: This was essential for the "Pixel Perfect" requirement. It allowed me to match the specific padding, margins, and custom colors from the design.
 
-To learn more about Next.js, take a look at the following resources:
+Framer Motion: I used this for the page transitions and the slide effects between questions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-- Key Features --
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Exact UI Match: I spent time ensuring the typography (Playfair Display & Inter), the segmented progress bar, and the thick blue borders matched the reference screenshots exactly.
 
-## Deploy on Vercel
+Animations: The dashboard fades out while the quiz expands in. Questions slide in from the right. Buttons have a hover "lift" effect.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Quiz Logic: The app validates that you have selected an answer before moving forward. It tracks your score and calculates the final percentage at the end.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Responsive: The card layout adapts to mobile screens while maintaining the correct aspect ratio.
+
+-- Time Spent --
+
+Total: Approx 4 to 5 Hours
+
+1 Hour: Initial setup (Next.js config, fonts, Tailwind theme).
+
+2 Hours: Building the UI. This took the most time because I was comparing my screen to the Figma shots constantly to get the pixels right.
+
+1 Hour: Logic (State management, scoring, navigation).
+
+1 Hour: Polish (Animations, fixing the progress bar, and adding the "Best of Luck" badge).
+
+-- Assumptions --
+
+Since I didn't have a backend API, I created a local data file for the questions. This mimics a real API structure so it can be easily swapped later.
+
+For icons, I used the Lucide-React library as they matched the design style closely without needing to manage SVG files manually.
+
+I noticed the "Test Your Knowledge" text had a color shift in the design, so I added a text gradient to match it.
+
+-- How to Run Locally --
+
+Clone the repository: git clone https://github.com/bhargav7262/quiz-app.git
+Install dependencies: npm install
+Run the server: npm run dev.
+Open http://localhost:3000 in your browser.
+
+
+Thanks for reviewing my work!
